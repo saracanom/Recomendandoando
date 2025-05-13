@@ -1,4 +1,5 @@
 # Sistemas de Recomendación Híbridos
+### Juan Felipe Vargas y Sara María Cano Martínez
 
 Este repositorio contiene la implementación de dos enfoques de sistemas de recomendación sobre el dataset MovieLens:
 
