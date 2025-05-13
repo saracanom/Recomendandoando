@@ -14,9 +14,8 @@ Este repositorio contiene la implementación de dos enfoques de sistemas de reco
 
 ## Estructura del Proyecto
 ### `data_files/`
-- **movies_clean.csv**, **ratings_clean.csv**: archivos CSV depurados y preparados.  
-- **spark_output/**: resultados parciales de Spark (shreds) tras el procesamiento de los datos.
-- **Origen de datos**: los CSV limpios se generaron a partir de los datos originales de MovieLens 32M cargados en un bucket S3.
+- **spark_output/**: resultados de Spark (shreds) tras el procesamiento de los datos.
+- **Origen de datos**: los CSV limpios se generaron a partir de los datos originales de MovieLens 32M cargados en un bucket S3. Los datos no se pueden subir a github por su gran tamaño.
 
 ### `data_processing/`
 Notebooks para la **exploración** y **limpieza** de los datos originales:
