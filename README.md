@@ -63,9 +63,7 @@ Modelos entrenados guardados mediante el mecanismo de Spark:
       from pyspark.ml.recommendation import ALSModel
       als = ALSModel.load("s3://tu-bucket/saved_models/als_model")
     - Content based:
----
-## Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
 
 
 
