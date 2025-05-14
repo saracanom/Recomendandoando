@@ -69,10 +69,11 @@ Modelos entrenados guardados mediante el mecanismo de Spark:
       from pyspark.ml.recommendation import ALSModel
       als = ALSModel.load("s3://tu-bucket/saved_models/als_model")
     - Content based:
-
-
-
-
-
-
-
+        ```PYTHON
+        recs = spark.read.parquet("s3://recomendandoando/recommendations/content_based/parquet/")
+        recs.show()
+        
+        # load pipeline and re-generate features if you ingest new movies
+        pipeline = PipelineModel.load("s3://recomendandoando/models/tfidf_content_pipeline")
+        new_movies = spark.read.csv("s3://...")         
+        new_featurized = pipeline.transform(new_movies)
